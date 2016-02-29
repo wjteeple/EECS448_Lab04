@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Web Store</title>
+    <link href="style.css" rel=”stylesheet” type=”text/css”/>
+    <script type="text/javascript" src="formChecker.js"></script>
+  </head>
+  <body>
+    <form action="customerBackend.php" method="post" onsubmit="return verify()">
+      <h1>Premium Baseball Surplus!</h1>
+      <hr>
+      <br><b>Baseball Bats! (Ball not included) $79.99!</b>
+      <br><img src="bat.jpg" width="200" height="200">
+      <br><input type="input" id="bat" name="bat">
+      <br><br>
+      <br><b>Baseball Mitts! $59.99!</b>
+      <br><img src="mitt.jpg" width="200" height="200">
+      <br><input type="input" id="mitt" name=mitt>
+      <br><br>
+      <br><b>Baseballs (100/bucket) $124.99!</b>
+      <br><img src="balls.jpg" width="200" height="200">
+      <br><input type="input" id="ball" name="ball">
+      <hr>
+      <b>Shipping type:</b><br>
+      <input type="radio" name="shipping" value="7-12 day" checked><b>Free - </b>7-12 Day Standard Shipping<br>
+      <input type="radio" name="shipping" value="3-5 day"><b>$14.99 - </b>3-5 Day Express Shipping<br>
+      <input type="radio" name="shipping" value="1 day"><b>$19.99 - </b>1 Day Overnight Shipping<br>
+      <hr>
+      <b>Select your username and password to access your order:</b>
+      <br>username: <br><input type="input" id="username" name="user">
+      <br>password: <br><input type="input" id="password" name="pass">
+      <br>re-enter password: <br><input type="input" id="reenter">
+      <br><button type="button" onclick="refresh()">Refresh</button>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
